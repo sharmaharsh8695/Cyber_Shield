@@ -3,7 +3,7 @@ const router = express.Router();
 const { createApiKey } = require("../services/apiKey-service.js");
 
 // Generate API Key
-router.post("/", (req, res) => {
+router.post("/generate-key", (req, res) => {
   const { name } = req.body;
 
   const newKey = createApiKey(name);

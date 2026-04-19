@@ -6,12 +6,13 @@ function generateApiKey() {
   return crypto.randomBytes(32).toString("hex");
 }
 
-function createApiKey(name = "default") {
+function createApiKey(name = "default",targetUrl) {
   const apiKey = generateApiKey();
 
   const newKey = {
     apiKey,
     name,
+    targetUrl,
     createdAt: new Date()
   };
 

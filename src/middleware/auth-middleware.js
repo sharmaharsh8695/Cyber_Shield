@@ -22,6 +22,7 @@ function authMiddleware(req,res,next){
   // attach to request (VERY IMPORTANT for later)
   req.apiKey = apiKey;
   req.client = keyData;
+  console.log("keydata",keyData)
 
   next();
 }

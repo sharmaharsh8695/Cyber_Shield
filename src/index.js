@@ -10,6 +10,6 @@ app.use(express.urlencoded({extended:true}));
 
 app.use('/api',router)
 
-app.listen(process.env.PORT,(req,res)=>{
-    console.log("app started on port",process.env.PORT);
-})
+// app.listen(process.env.PORT,(req,res)=>{
+//     console.log("app started on port",process.env.PORT);
+// })

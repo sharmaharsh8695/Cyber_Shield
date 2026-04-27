@@ -23,19 +23,5 @@ router.use(
   }
 );
 
-router.get("/test-log", authMiddleware, (req, res) => {
-  const logService = require('../services/logs-service');
-
-  logService.log({
-    apiKey: req.apiKey,
-    ip: req.ip,
-    endpoint: req.originalUrl,
-    method: req.method,
-    type: "NORMAL",
-    action: "ALLOWED"
-  });
-
-  res.json({ message: "Log created" });
-});
 
 module.exports = router;

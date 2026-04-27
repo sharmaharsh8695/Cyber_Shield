@@ -13,3 +13,5 @@ app.use('/api',router)
 // app.listen(process.env.PORT,(req,res)=>{
 //     console.log("app started on port",process.env.PORT);
 // })
+
+module.exports = app;
